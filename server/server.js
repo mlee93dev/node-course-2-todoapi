@@ -47,11 +47,11 @@ app.get('/todos/:id', (req, res) => {
         res.send({todo});
       }
       else{
-        res.status(404).send({});
+        res.status(404).send();
       }
     })
     .catch((e) => {
-      res.status(400).send({});
+      res.status(400).send();
     });
 
 });
